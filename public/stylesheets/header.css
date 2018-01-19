@@ -1,0 +1,86 @@
+.header{
+    position:fixed;
+    height:100px;
+    box-shadow:0 4px 4px #eee;
+    width:100%;
+}
+.header>.header-top{
+    overflow: hidden;
+    font-size:12px;
+    color:#ab977e;
+}
+.header>.header-top>ul{
+    float:right;
+    margin-right:120px;
+    margin-top:5px;
+    margin-bottom:7px;
+}
+.header>.header-top>ul li{
+    float:left;
+    margin-left:10px;
+}
+.header>.header-top>ul li a:hover{
+    text-decoration: underline;
+}
+.header>.header-top>ul>li>a>i{
+    display: inline-block;
+    width:10px;
+    height: 10px;
+    background: url('../images/icon.png') no-repeat ;
+}
+.header>.header-btm{
+    font-size:12px;
+    height:70px;
+    overflow: hidden;
+}
+.header>.header-btm ul{
+    overflow:hidden;
+    float:left;
+    margin-left:240px;
+    height:68px;
+    //line-height:70px;
+}
+.header>.header-btm ul li{
+    float:left;
+    width:180px;
+    height:68px;
+    /*line-height: 70px;*/
+    text-align:center;
+    padding-top: 16px;
+    box-sizing:border-box;
+
+}
+.header>.header-btm>ul li.active{
+    border-bottom:3px solid #7b9196;
+}
+.header>.header-btm>ul li a{
+  color:#767676;
+}
+.header>.header-btm>ul b{
+    border-left:1px solid #eee;
+    float: left;
+    height:40px;
+    margin-top: 16px;
+
+}
+.header>.header-btm>ul a span:first-child{
+    font-size:16px;
+    display:block;
+}
+.header>.header-btm>div.tel{
+    width:195px;
+    padding-top: 18px;
+    float: left;
+}
+/*.header>.header-tm>div.tel a>i{*/
+    /*display: inline-block;*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*border:1px solid red;*/
+/*}*/
+.header>.header-btm>div.tel
+.header>.header-btm>div.tel>span+span{
+    display: block;
+    color:#b0916a;
+}
+

@@ -1,8 +1,11 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body ,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,pre,hr{
+  margin:0;
+  padding: 0;
 }
 
 a {
-  color: #00B7FF;
+    text-decoration: none;
 }
+ul{list-style:none}
+hr{border:1px solid #eee}
+/**{border:1px solid red}*/
