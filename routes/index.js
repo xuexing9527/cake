@@ -34,4 +34,9 @@ router.get('/header', function *(next) {
         title: 'Hello header!'
     });
 });
+router.get('/footer', function *(next) {
+    yield this.render('footer', {
+        title: '!'
+    });
+});
 module.exports = router;
