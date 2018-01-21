@@ -1,0 +1,108 @@
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #f2f6f7;
+	padding-top: 10px;
+}
+.footer .footerBox{
+	width: 1200px;
+	margin: auto;
+}
+/*图片*/
+.footer .footerBox .footerImg{
+	position: relative;
+	width: 100%;
+}
+.footer .footerBox .footerImg:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.footer .footerBox .footerImg ul>li{
+	float: left;
+}
+.footer .footerBox .footerImg ul>li>a{
+	display: block;
+	border-bottom: 3px solid #d9e8ec;
+	padding-bottom: 6px;
+	margin: 15px;
+}
+.footer .footerBox .footerImg ul>li>a:hover{
+	border-bottom: 3px solid #7b9196;
+}
+/*详请*/
+.footer .footerBox .footerDetails{
+	width: 100%;
+	margin: auto;
+	padding: 40px 0 20px 0;
+}
+.footer .footerBox .footerDetails .site{
+	float: left;
+	width: 300px;
+	font-size: 14px;
+	margin-left: 90px;
+}
+.footer .footerBox .footerDetails .site p{
+	margin-top: 10px;
+}
+.footer .footerBox .footerDetails .details{
+	float: left;
+	border-left: 1px solid #bbb;
+	width: 600px;
+	margin-left: 50px;
+}
+.footer .footerBox .footerDetails .details dl{
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.footer .footerBox .footerDetails .details dl dt{
+	font-weight: 700;
+	line-height: 24px;
+}
+.footer .footerBox .footerDetails .details dl dd{
+	font-size: 12px;
+	line-height: 24px;
+}
+.footer .footerBox .footerDetails .details dl dd a.img{
+	display: inline-block;
+	height: 25px;
+	width: 24px;
+	background: url("../images/weChat.png")no-repeat;
+	background-size: auto 25px;
+}
+.footer .footerBox .footerDetails:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*版权*/
+.footer .footerBox .footerCopy{
+	text-align: center;
+	padding: 50px 0 20px 0;
+}
+.footer .footerBox .footerCopy p a img{
+	margin-bottom: -7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
