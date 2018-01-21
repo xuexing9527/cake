@@ -1,24 +1,174 @@
 .login{
 	width: 100%;
 	margin: 30px auto;
-	border: 1px solid red;
 }
 .login .loginBox{
 	width: 960px;
 	height: 450px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
+/*文字*/
 .login .loginBox .text{
 	float: left;
 	width: 460px;
 	padding: 100px 40px 0 0;
-	border: 1px solid red;
 }
-.login .loginBox .from{
-	width: 460px;
+.login .loginBox .text h1{
+	color: #7b9196;
+	font-size: 54px;
+}
+.login .loginBox .text p{
+	float: right;
+	font-size: 34px;
+	color: #d9e8ec;
+	line-height: 34px;
+	padding: 5px 0;
+}
+.login .loginBox .text p:last-child{
+	font-size: medium;
+	width: 340px;
+	padding: 5px 0;
+	color: #aaa;
+}
+/*表单*/
+.login .loginBox .listBox{
+	width: 450px;
 	float: left;
 	padding: 30px 0 0 0;
 	color: #767676;
-	border: 1px solid red;
 }
+.login .loginBox .listBox .bar{
+	border-bottom: 1px solid #d6d6d6;
+	width: 340px;
+	line-height: 40px;
+	padding-bottom: 10px;
+}
+.login .loginBox .listBox .login_bar{
+	display: inline-block;
+	padding: 0 34px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #767676;
+}
+.login .loginBox .listBox .on{
+	font-weight: bold;
+}
+.login .loginBox .listBox .input{
+	padding: 5px;
+	position: relative;
+	margin-top: 5px;
+}
+.login .loginBox .listBox .input input{
+	background: #f0f0f0 url("../images/icon.png") no-repeat;
+	height: 40px;
+	font-size: 14px;
+	color: #767676;
+	border: 0;
+	width: 235px;
+	padding: 5px 10px 5px 45px;
+}
+.login .loginBox .listBox .input .y{
+	background-position: -350px -285px;
+}
+.login .loginBox .listBox .input .m{
+	background-position: -350px -335px;
+}
+.login .loginBox .listBox .btn{
+	padding: 5px;
+	font-size: 12px;
+}
+.login .loginBox .listBox .btn span{
+	display: inline-block;
+	width: 155px;
+	text-align: center;
+	margin-right: 15px;
+	cursor: pointer;
+	background: #b0916a;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+	border-radius: 3px;
+}
+.login .loginBox .listBox .btn span:hover{
+	background: #8b7860;
+}
+.login .loginBox .listBox .btn a{
+	color: #aaa;
+}
+.login .loginBox .listBox .btn a:hover{
+	text-decoration: underline;
+}
+.login .loginBox .listBox .ti{
+	padding: 6px;
+	font-size: 12px;
+	color: #aaa;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+}
+.login .loginBox .listBox .ti a{
+	color: #a5002f;
+	display: inline-block;
+	margin-left: 10px;
+}
+.login .loginBox .listBox .zf p{
+	font-size: 12px;
+	color: #aaa;
+	padding: 0 0 5px 5px;
+}
+.login .loginBox .listBox .zf a{
+	background: url("../images/icon.png") no-repeat;
+	display: inline-block;
+	width: 30px;
+	height: 24px;
+}
+.login .loginBox .listBox .zf a.sina{
+	background-position: -8px -366px;
+}
+.login .loginBox .listBox .zf a.slipay{
+	width: 55px;
+	background-position: -49px -366px;
+	margin-left: 15px;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+/*手机登录*/
+.login .loginBox .listBox .input .t{
+	background-position: -350px -435px;
+}
+.login .loginBox .listBox .input span.f{
+	display: inline-block;
+	color: #fff;
+	background: #b0916a;
+	font-size: 12px;
+	line-height: 23px;
+	width: 100px;
+	margin-left: 10px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	top: -12px;
+}
+.login .loginBox .listBox .input span.f:hover{
+	background: #8b7860;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

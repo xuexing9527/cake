@@ -36,7 +36,12 @@ router.get('/header', function *(next) {
 });
 router.get('/footer', function *(next) {
     yield this.render('footer', {
-        title: '!'
+        title: 'Hello footer'
+    });
+});
+router.get('/login', function *(next) {
+    yield this.render('login', {
+        title: 'Hello login'
     });
 });
 module.exports = router;

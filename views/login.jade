@@ -1,3 +1,49 @@
 extends layout
 block content
-	p nihao
+	div.login
+		div.loginBox
+			div.text
+				h1 Veuillez signer
+				p Inviter des amis
+					br
+					span peut être mystérieux.
+				p Vous avez besoin de remplir le numéro de téléphone de votre login
+			div.listBox
+					div.bar
+						span.login_bar.on 普通登录
+						span |
+						span.login_bar 手机验证码登录
+					div.formBox.hide
+						div.input
+							input(type="text" placeholder="请输入用户名" class="y")
+							span
+						div.input
+							input(type="password" placeholder="请输入密码" class="m")
+							span
+						div.btn
+							span.btn1 登 录
+							a(href="#") 忘记密码 	?
+						div.ti 提示：还不是会员？
+							a(href="#") 立即注册
+						div.zf
+							p 使用合作网站帐号登录
+							a(href="#").sina
+							a(href="#").slipay
+					div.formBox.show
+						div.input
+							input(type="text" placeholder="请输入手机号码" class="y")
+							span
+						div.input
+							input(type="text" placeholder="请输入图片验证码" class="t")
+							span
+						div.input
+							input(type="text" placeholder="请输入短信验证码" class="m")
+							span.f 发送验证码 &gt;&gt;
+						div.btn
+							span.btn1 登 录
+						div.ti 提示：还不是会员？
+							a(href="#") 立即注册
+						div.zf
+							p 使用合作网站帐号登录
+							a(href="#").sina
+							a(href="#").slipay
