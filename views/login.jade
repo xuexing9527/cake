@@ -1,4 +1,6 @@
 extends layout
+append head
+	link(rel='stylesheet', href='/stylesheets/login.css')
 block content
 	div.login
 		div.loginBox
@@ -47,3 +49,4 @@ block content
 							p 使用合作网站帐号登录
 							a(href="#").sina
 							a(href="#").slipay
+
