@@ -1,8 +1,11 @@
 .header{
     position:fixed;
+    top:0;
     height:100px;
     box-shadow:0 4px 4px #eee;
     width:100%;
+    z-index: 100;
+    background-color: #ffffff;
 }
 .header>.header-top{
     overflow: hidden;
