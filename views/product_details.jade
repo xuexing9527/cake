@@ -1,0 +1,44 @@
+extends layout
+append head
+	link(rel='stylesheet', href='/stylesheets/product_details.css')
+block content
+	div.product_details
+		//图片展示
+		div.details_box
+			//左边图片列表
+			div.details_list
+				div.top_btn
+					i
+				div.small_list
+					ul
+						li
+							a(src="#")
+								img(src="images/xiangqing/sm/7.jpg")
+							a(src="#")
+								img(src="images/xiangqing/sm/8.jpg")
+							a(src="#")
+								img(src="images/xiangqing/sm/9.jpg")
+				div.bottom_btn
+					i
+			//图片
+			div.details_img
+				img(src="images/xiangqing/mm/7.jpg")
+				div.mask
+				div.upMask
+				div.largeDiv
+				div.details_text
+					p Depuis sa création en 1893 du restaurant Maxim, ce gâteau, comme son panonceau, n'a jamais changé.
+					p 自1893年马克西姆餐厅成立以来，没换过的除了招牌，还有这款蛋糕。
+			//价格
+			div.price_box
+				div.title
+					span Napoléon 1893 拿破仑1893
+				div.pric ￥
+					span 298.00
+				ul.size
+					li
+						span 1磅
+					li
+						span 2磅
+					li
+						span 5磅
