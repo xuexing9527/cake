@@ -7,7 +7,7 @@ block content
             div.listBox
                 div.bar
                     span.register_bar 会员注册
-                div.formBox.show
+                div.formBox
                     div.input
                         input(type="text" placeholder="手机号码" class="y")
                         span
@@ -20,9 +20,11 @@ block content
                     div.input
                         input(type="text" placeholder="密码确认" class="pwdNew")
                         span
-                    div
+                    div.ck
                         input(type='checkbox' id='ck')
-                        label 《购物协议》
+                        label(for='ck')
+                            a(href='#') &nbsp;&nbsp;同意《购物协议》
+                        i
                     div.btn
                         span.btn1 提交
             div.img

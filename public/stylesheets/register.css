@@ -100,7 +100,7 @@
     display: inline-block;
     width: 155px;
     text-align: center;
-    margin-right: 15px;
+    margin-left: 70px;
     cursor: pointer;
     background: #b0916a;
     height: 34px;
@@ -140,21 +140,8 @@
     width: 30px;
     height: 24px;
 }
-.register .registerBox .listBox .zf a.sina{
-    background-position: -8px -366px;
-}
-.register .registerBox .listBox .zf a.slipay{
-    width: 55px;
-    background-position: -49px -366px;
-    margin-left: 15px;
-}
-.show{
-    display: block;
-}
-.hide{
-    display: none;
-}
-/*手机登录*/
+
+
 .register .registerBox .listBox .input .t{
     background-position: -350px -435px;
 }
@@ -174,3 +161,29 @@
 .register .registerBox .listBox .input span.f:hover{
     background: #8b7860;
 }
+.register .registerBox .listBox .formBox .ck{
+    height:40px;
+    line-height: 40px;
+    position: relative;
+}
+.register .registerBox .listBox .formBox .ck input{
+    border:none;
+    background-color: #eeeeee;
+}
+.register .registerBox .listBox .formBox .ck i{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:36px;
+    height: 36px;
+    background: url(../images/ok.png) no-repeat 0 -280px;
+
+}
+.register .registerBox .listBox .formBox .ck label a{
+    color: #767676;
+    font-size: 12px;
+}
+.register .registerBox .listBox .formBox .ck label a:hover{
+    color: #b0916a;
+}
+
