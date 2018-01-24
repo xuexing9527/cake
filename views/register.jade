@@ -1,0 +1,33 @@
+extends layout
+append head
+    link(rel='stylesheet', href='/stylesheets/register.css')
+block content
+    div.register
+        div.registerBox
+            div.listBox
+                div.bar
+                    span.register_bar 会员注册
+                div.formBox
+                    div.input
+                        input(type="text" placeholder="手机号码" class="y")
+                        span
+                    div.input
+                        input(type="text" placeholder="手机验证码" class="m")
+                        span.f 发送验证码 &gt;&gt;
+                    div.input
+                        input(type="text" placeholder="新密码" class="pwd")
+                        span 密码必须是6-30位字符，可使用字母、数字
+                    div.input
+                        input(type="text" placeholder="密码确认" class="pwdNew")
+                        span
+                    div.ck
+                        input(type='checkbox' id='ck')
+                        label(for='ck')
+                            a(href='#') &nbsp;&nbsp;同意《购物协议》
+                        i
+                    div.btn
+                        span.btn1 提交
+            div.img
+                i
+                span 我已经注册,现在就<a href="/login"> 登录</a>
+

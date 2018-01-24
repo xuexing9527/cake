@@ -44,4 +44,9 @@ router.get('/login', function *(next) {
         title: 'Hello login'
     });
 });
+router.get('/register', function *(next) {
+    yield this.render('register', {
+        title: 'Hello login'
+    });
+});
 module.exports = router;
