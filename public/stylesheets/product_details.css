@@ -82,6 +82,7 @@
 	width: 300px;
 	height: 300px;
 	display: none;
+	background: url(../images/xiangqing/big/7.jpg);
 }
 .details_box .details_img .details_text{
 	font-size: 12px;
@@ -128,9 +129,62 @@
 	background: #f2f6f7;
 	border-radius: 2px;
 }
-
-
-
+.details_box .price_box .desc{
+	color: #b6b6b6;
+	line-height: 20px;
+	font-size: 12px;
+	margin: 15px 0 ;
+}
+/*加减按钮*/
+.details_box .price_box .num{
+	padding: 10px 0;
+	color: #767676;
+	font-size: 12px;
+}
+.details_box .price_box .num input{
+	margin-top: 2px;
+    width: 35px;
+    height: 20px;
+    border: none;
+    background: 0 0;
+    color: #b0916a;
+    text-align: center;
+}
+.details_box .price_box .num b{
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	background: #f2f6f7 url(../images/icon.png)no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.details_box .price_box .num .btn1{
+	background-position: -7px -282px;
+}
+.details_box .price_box .num .btn2{
+	background-position: -67px -253px;
+}
+/*换购*/
+.details_box .price_box .huan span{
+	display: inline-block;
+	width: 36px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	background: #a5002f;
+}
+.details_box .price_box .huan .check{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: url(../images/xiangqing/check_1123_2.png)no-repeat;
+	position: relative;
+	top: 4px;
+	left: 10px;
+}
 
 
 
