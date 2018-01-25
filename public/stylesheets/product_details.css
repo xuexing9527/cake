@@ -165,7 +165,7 @@
 	background-position: -67px -253px;
 }
 /*换购*/
-.details_box .price_box .huan span{
+/*.details_box .price_box .huan span{
 	display: inline-block;
 	width: 36px;
 	height: 18px;
@@ -185,10 +185,32 @@
 	top: 4px;
 	left: 10px;
 }
+.details_box .price_box .huan .huan_price{
+	display: inline-block;
+	width: ;
+}*/
 
-
-
-
+/*按钮*/
+.details_box .price_box .btns{
+	width: 490px;
+	height: 34px;
+	margin: 10px 0;
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 30px;
+}
+.details_box .price_box .btns button{
+	width: 160px;
+	height: 30px;
+	color: #fff;
+	background: #b0916a;
+	cursor: pointer;
+	margin-right: 5px;
+	border-radius: 3px;
+	float: left;
+}
+.details_box .price_box .btns button:hover{
+	    background: #8b7860;
+}
 
 
 
