@@ -1,21 +1,37 @@
 .box{
 	width: 100%;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	font-size: 12px;
 	color: #767676;
 }
 .box .bannerBox{
 	width: 100%;
 	height: 550px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-/*body*/
-/*title*/
+/*!*轮播图片*!*/
+/*.box .bannerBox ul{*/
+	/*!*overflow: hidden;*!*/
+/*}*/
+/*.box .bannerBox ul li{*/
+	/*display: inline-block;*/
+	/*!*overflow: hidden;*!*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+/*}*/
+/*.box .bannerBox ul .img-2018{*/
+	/*position: relative;*/
+/*}*/
+/*.box .bannerBox ul .img-2018 img{*/
+	/*position: absolute;*/
+	/*left: -20%;*/
+/*}*/
 .box .main{
 	width: 1136px;
 	margin: auto;
+	position: relative;
 }
 .box .main .title{
 	width: 100%;
@@ -34,15 +50,21 @@
 	height: 35px;
 	background-position: 50% 0;
 }
+.box .main .title .title_box p.xiaoshi{
+	background: url(../images/index/tp_title.png)no-repeat;
+	height: 35px;
+	background-position: 50% 0;
+}
 /*列表*/
 .box .main .boy{
 	width: 1110px;
 	margin: auto;
-	height: 800px;	
+	/*height: 800px;	*/
 }
 .box .main .boy ul{
 	margin-top: 15px;
 	margin-left: 7px;
+    overflow: hidden;
 }
 .box .main .boy ul li{
 	float: left;
@@ -113,6 +135,37 @@
 	width: 36px;
 	height: 36px;
 	background: #f2f6f7 url(../images/icon.png)no-repeat -39px -6px;
+}
+/*侧边导航条*/
+.toolbar{
+	position:absolute;
+	top:50px;
+	right: -60px;
+	text-align:right;
+}
+
+.toolbar> h2:first-child{
+	color:#7b9196;
+	background-image: url('../images/icon.png');
+	background-repeat: no-repeat;
+	background-position: -314px -126px;
+	font-size: 12px;
+	cursor:pointer;
+	width: 70px;
+	height: 34px;
+}
+.toolbar .list li{
+	margin-top:5px;
+}
+.toolbar  a{
+	color: #767676;
+    font-size: 12px;
+}
+.toolbar  a:hover{
+	color: #b0916a;
+}
+.toolbar h2 a{
+	color:#7b9196;
 }
 
 
