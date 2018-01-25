@@ -24,6 +24,9 @@
     height: 27px;
     line-height:27px;
 }
+.header>.header-top>ul li a{
+    color: #ab977e;
+}
 .header>.header-top>ul li a:hover{
     text-decoration: underline;
 }
@@ -81,6 +84,9 @@
     float: left;
     color:#767676;
 }
+.header>.header-btm>.tel a span {
+    color: #b0916a;
+}
 .header>.header-btm>div.tel a>i{
     display: inline-block;
     width: 20px;
@@ -116,6 +122,7 @@
     border-radius: 5px;
     padding: 5px 8px;
     background-color: #ffffff;
+    display: none;
 
 }
 .header>.header-btm>div.address>i{
