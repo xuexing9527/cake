@@ -11,6 +11,7 @@
     overflow: hidden;
     font-size:12px;
     color:#ab977e;
+    position: relative;
 }
 .header>.header-top>ul{
     float:right;
@@ -39,6 +40,44 @@
     vertical-align: middle;
     margin-right: 5px;
 }
+/*tips*/
+.header .header-top .tips{
+    width:50%;
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
+    height: 14px;
+    left:25%;
+    position: relative;
+    overflow: hidden;
+}
+.header .header-top .tips p{
+    height: 14px;
+    white-space: nowrap;
+    position: absolute;
+    animation: tips 15s linear infinite;
+    transition: all 10s linear;
+}
+
+
+@keyframes tips {
+    0%{
+        left:0;
+    }
+    50%{
+        left: -50%;
+    }
+    75%{
+        left:-100%;
+    }
+    /*100%{*/
+        /*right: 0;*/
+    /*}*/
+}
+
+
+
+
 .header>.header-btm{
     font-size:12px;
     height:70px;

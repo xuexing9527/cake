@@ -2,8 +2,11 @@ var app = require('koa')()
   , logger = require('koa-logger')
   , json = require('koa-json')
   , views = require('koa-views')
-  , onerror = require('koa-onerror');
+  , config = require('./config/default')
 
+, onerror = require('koa-onerror');
+
+var bodyParser = require('koa-bodyparser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
@@ -15,7 +18,11 @@ app.use(views('views', {
   root: __dirname + '/views',
   default: 'jade'
 }));
+
 app.use(require('koa-bodyparser')());
+// 使用表单解析中间件
+app.use(bodyParser());
+
 app.use(json());
 app.use(logger());
 
