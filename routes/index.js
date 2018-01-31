@@ -49,15 +49,14 @@ router.get('/register', function *(next) {
         title: 'Hello login'
     });
 });
-<<<<<<< HEAD
 router.get('/product_details', function *(next) {
     yield this.render('product_details', {
         title: 'Hello login'
-=======
+    });
+});
 router.get('/napoleon', function *(next) {
     yield this.render('napoleon', {
         title: 'Hello napoleon'
->>>>>>> f6ba60a1c7c1c6f9c17294b3c72e79ef44ca08f6
     });
 });
 module.exports = router;
