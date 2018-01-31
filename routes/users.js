@@ -38,15 +38,17 @@ router.post('/signup', function *(next) {
                     console.log(error)
                 }
                 ctx.body={
-                    data:1
+                    data: 1
                 };;
             }else if (user.pass!==user.repeatpass || user.pass==''){
                 ctx.body={
-                    data:2
+                    data: 2
                 };
             }else{
                 ctx.body={
-                    data:3
+                    status: 3,
+                    msg: '注册成功！'
+
                 };
                 console.log('注册成功')
                 // ctx.session.user=ctx.request.body.name

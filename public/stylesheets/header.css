@@ -55,7 +55,7 @@
     height: 14px;
     white-space: nowrap;
     position: absolute;
-    animation: tips 15s linear infinite;
+    animation: tips 15s linear  infinite;
     transition: all 10s linear;
 }
 
@@ -67,7 +67,7 @@
     50%{
         left: -50%;
     }
-    75%{
+    100%{
         left:-100%;
     }
     /*100%{*/
@@ -106,6 +106,10 @@
 .header>.header-btm>ul li a{
   color:#767676;
 }
+.header>.header-btm>ul li a:hover{
+    color:#b0916a;
+    text-decoration: none;
+}
 .header>.header-btm>ul b{
     border-left:1px solid #eee;
     float: left;
@@ -122,6 +126,9 @@
     padding-top: 18px;
     float: left;
     color:#767676;
+}
+.header .header-btm .tel span a:hover{
+    text-decoration: none;
 }
 .header>.header-btm>.tel a span {
     color: #b0916a;
@@ -149,57 +156,69 @@
     float:right;
     font-size: 16px;
 }
+/*地址的切换*/
 .header>.header-btm>div.address{
     position: absolute;
-    bottom: -63%;
+    top: 60px;
     right: 12%;
     font-size: 14px;
     color: #767676;
     border: 1px solid #b0916a;
     width: 82px;
-    height: 100px;
+    height: 128px;
     border-radius: 5px;
-    padding: 5px 8px;
+    /*padding: 5px 8px;*/
     background-color: #ffffff;
     display: none;
+    overflow: hidden;
+    padding:10px;
 
 }
 .header>.header-btm>div.address>i{
 
-    display: inline-block;
     width: 13px;
     height: 21px;
-    vertical-align: middle;
-    margin-right: 5px;
     background: url(../images/index/wz.png) no-repeat;
+    float: left;
+
 }
-.header>.header-btm>div.address>ul{
-    width: 82px;
-    height: 20px;
-    line-height: 20px;
-    position: absolute;
-    top: 4px;
-    left: 22px;
+.header>.header-btm>div.address>div{
+    float: right;
 }
-.header>.header-btm>div.address>ul li{
-    width: 50px;
-    margin-left: 5px;
+.header .header-btm .address p{
+    width:60px;
     margin-bottom: 5px;
 }
-.header>.header-btm>div.address>ul li a{
+.header .header-btm .address p a{
+    color: #b0916a;
+}
+.header .header-btm .address ul{
+    margin-left: -15px;
+}
+.header>.header-btm>div.address ul li{
+    width: 60px;
+    /* margin-bottom: 15px; */
+    /* border: 1px solid red; */
+    padding: 7px 5px;
+    /* border: 1px solid red; */
+    /* height: 30px; */
+    /* line-height: 30px; */
+    text-align: center;
+}
+.header .header-btm .address ul li:hover{
+    border-radius: 22px;
+    background: #eee;
+}
+.header>.header-btm>div.address ul li a{
     color: #767676;
 }
-.header>.header-btm>div.address>ul li a:hover{
+.header>.header-btm>div.address ul li a:hover{
     color: #b0916a;
 }
 
-.header>.header-btm>div.address>ul li a.active{
-    background-color: #eeeeee;
+.header>.header-btm>div.address ul li .active{
     border-radius: 10px;
-    display: inline-block;
-    width:45px;
-    height:22px;
-    line-height: 22px;
 
+    background-color: #eeeeee;
 }
 
