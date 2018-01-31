@@ -1,13 +1,15 @@
 doctype html
 html
   head
-    block head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/header.css')
+    block head
     link(rel='stylesheet', href='/stylesheets/footer.css')
   body
     include includes/header
     block content
     include includes/footer
+    script(src='js/lib/jquery.js')
+    script(src='js/lib/bootstrap.js')
     block javascript

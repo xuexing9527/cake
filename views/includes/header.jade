@@ -9,6 +9,8 @@ div.header
                   a(href='#') LOG IN 登录
                 li
                   a(href='#') SIGN UP 注册
+            div.tips
+                p 温馨提示：近日部分地区将出现低温雨雪天气，受恶劣天气影响，配送时间可能会有所延误。给您带来不便，敬请谅解！外出时记得添加衣物，注意交通安全！　　　温馨提示：近日部分地区将出现低温雨雪天气，受恶劣天气影响，配送时间可能会有所延误。给您带来不便，敬请谅解！外出时记得添加衣物，注意交通安全！　　　
         hr
         div.header-btm
             ul
@@ -18,7 +20,7 @@ div.header
                     span 全部产品
                 b
                 li
-                    a(href='#')
+                    a(href='napoleon')
                         span Napoleon
                         span 拿破仑系列
                 b
@@ -42,12 +44,15 @@ div.header
                     span 六环以内部分区域满100包邮
             div.address
                 i
-                ul
-                  li
-                    a(href='#') 北京市
-                  li
-                    a.active(href='#') 上海市
-                  li
-                    a(href='#') 杭州市
-                  li
-                    a(href='#') 苏州市
+                div
+                    p
+                        a(href='#') 北京市
+                    ul
+                        li.active
+                             a(href='#') 上海市
+                        li
+                             a(href='#') 杭州市
+                        li
+                             a(href='#') 苏州市
+append javascript
+    script(src='js/header.js')
