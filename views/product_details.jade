@@ -1,6 +1,8 @@
 extends layout
 append head
 	link(rel='stylesheet', href='/stylesheets/product_details.css')
+	script(src='js/lib/jquery.min.js')
+	script(src='js/product_details.js')
 block content
 	div.product_details
 		//图片展示
@@ -46,11 +48,21 @@ block content
 					span 适合4~7人食用
 					span SIZE:17.5cm*7.0cm
 					p 需提前5小时预定
-				div.num
+				div.num#num
 					span 数量：
 					b.btn1
 					input(type="text" value="1")
 					b.btn2
 				div.btns
 					button 加入购物车
-					button 立即购买		
+					button 立即购买
+				div.hint
+					dt *温馨提示：
+					dd 过敏体质请谨慎购买
+				ul.select
+					li.show
+						span Best Ingredient
+						p 优质原材料
+					li
+						span Evaluation
+						p 累计点评(0)

@@ -194,9 +194,7 @@
 .details_box .price_box .btns{
 	width: 490px;
 	height: 34px;
-	margin: 10px 0;
-	border-bottom: 1px solid #d6d6d6;
-	padding-bottom: 30px;
+	margin: 10px 0 0 0;
 }
 .details_box .price_box .btns button{
 	width: 160px;
@@ -211,8 +209,39 @@
 .details_box .price_box .btns button:hover{
 	    background: #8b7860;
 }
+.details_box .price_box .hint{
+	padding: 10px 0 30px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 12px;
+}
+.details_box .price_box .hint dt{
+	float: left;
+	color: #767676;
+}
+.details_box .price_box .hint dd{
+	float: left;
+	color: #a5002f;
+}
+.details_box .price_box .select{
+	padding: 20px 0 0;
+	font-weight: bold;
+	overflow: hidden;
+}
+.details_box .price_box .select li{
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 60px 0 0;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #d9e8eb;
+}
+.details_box .price_box .select li span{
+	font-size: 1pc;
+}
+.details_box .price_box .select li.show{
+	border-bottom: 3px solid #7b9196;
 
-
+}
 
 
 
