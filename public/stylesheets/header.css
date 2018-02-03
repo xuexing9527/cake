@@ -44,7 +44,6 @@
 .header .header-top .tips{
     width:50%;
     font-size: 12px;
-    color: red;
     margin-top: 10px;
     height: 14px;
     left:25%;
@@ -53,22 +52,45 @@
 }
 .header .header-top .tips p{
     height: 14px;
+    color: red;
     white-space: nowrap;
     position: absolute;
-    animation: tips 15s linear  infinite;
+    right: 0px;
+    animation: tip 20s linear  infinite;
     transition: all 10s linear;
 }
-
-
-@keyframes tips {
+.header .header-top .tips div{
+    height: 14px;
+    color: red;
+    white-space: nowrap;
+    position: absolute;
+    right: -864px;
+    animation: tips 15s linear 8s infinite;
+    transition: all 10s linear;
+}
+@keyframes tipd{
     0%{
-        left:0;
+        right: -864px;
     }
     50%{
-        left: -50%;
+        right: 300px;
     }
     100%{
-        left:-100%;
+        right: 900px;
+    }
+    /*100%{*/
+        /*right: 0;*/
+    /*}*/
+}
+@keyframes tipsd {
+    0%{
+        right: -864px;
+    }
+    50%{
+        right: 200px;
+    }
+    100%{
+        right: 1000px;
     }
     /*100%{*/
         /*right: 0;*/
