@@ -6,11 +6,11 @@ router.get('/', function *(next) {
   });
 });
 
-router.get('/foo', function *(next) {
-  yield this.render('index', {
-    title: 'Hello World foo!'
-  });
-});
+// router.get('/foo', function *(next) {
+//   yield this.render('index', {
+//     title: 'Hello World foo!'
+//   });
+// });
 
 router.get('/allCake', function *(next) {
     yield this.render('index', {
@@ -24,28 +24,23 @@ router.get('/allCake2', function *(next) {
     });
 });
 
-router.get('/test', function *(next) {
-    yield this.render('test', {
-        title: 'Hello test!'
-    });
-});
-router.get('/header', function *(next) {
-    yield this.render('header', {
-        title: 'Hello header!'
-    });
-});
-router.get('/footer', function *(next) {
-    yield this.render('footer', {
-        title: 'Hello footer'
-    });
-});
+// router.get('/header', function *(next) {
+//     yield this.render('header', {
+//         title: 'Hello header!'
+//     });
+// });
+// router.get('/footer', function *(next) {
+//     yield this.render('footer', {
+//         title: 'Hello footer'
+//     });
+// });
 router.get('/login', function *(next) {
-    yield this.render('login', {
+    yield this.render('user／login', {
         title: 'Hello login'
     });
 });
 router.get('/register', function *(next) {
-    yield this.render('register', {
+    yield this.render('user/register', {
         title: 'Hello login'
     });
 });

@@ -19,13 +19,39 @@
     transform: translate(-50%,50%);
     z-index: 1;
 }
-.napoleon .second a img,.napoleon .three a img ,.napoleon .forth a img {
+/*第二第三第四模块前景内容*/
+.napoleon .second .front img.hidden{
+    height: 0;
+}
+.napoleon .second .front a img,.napoleon .three .front a img ,.napoleon .forth .front a img {
     position: absolute;
     left:50%;
     bottom:0;
     transform: translate(-50%,0);
     z-index: 1;
 }
+/*第二第三第四背景内容*/
+
+.napoleon .second .back{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.napoleon .second .back .lf{
+    width:600px;
+    height: 458px;
+    float: left;
+    margin: 112px 0 0 227px;
+}
+.napoleon .second .back .rt{
+    width:600px;
+    height: 458px;
+    float: left;
+    border:1px solid red;
+}
+
+
+
 
 .napoleon .first .container >img{
     display: block;
