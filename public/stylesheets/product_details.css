@@ -1,0 +1,256 @@
+.product_details{
+	height: 1000px;
+	margin-top: 30px;
+}
+.product_details .details_box{
+	margin-left: 50px;
+}
+.details_box .details_list{
+	float: left;
+	width: 92px;
+}
+/*上箭头*/
+.details_list .top_btn,.details_list .bottom_btn{
+	float: left;
+	width: 92px;
+	height: 20px;
+	cursor: pointer;
+}
+.details_list .top_btn i{
+	display: block;
+	width: 15px;
+	height: 8px;
+	margin: auto;
+	margin-top: 6px;
+	background: url(../images/icon.png)no-repeat -324px -22px;
+}
+/*下箭头*/
+.details_list .bottom_btn i{
+	display: block;
+	width: 15px;
+	height: 8px;
+	margin: auto;
+	margin-top: 6px;
+	background: url(../images/icon.png)no-repeat -351px -39px;
+}
+/*图片列表*/
+.details_list .small_list{
+	width: 92px;
+	overflow: hidden;
+	height: 400px;
+}
+.details_list .small_list ul li{
+	margin: 0 2px;
+	cursor: pointer;
+}
+.details_list .small_list ul li img{
+	border: 1px solid #c6b098;
+	width: 88px;
+	height: 88px;
+}
+/*大图展示区*/
+.details_box .details_img{
+	float: left;
+	margin: 20px 0 0 8px;
+	width: 480px;
+	position: relative;
+}
+.details_box .details_img .mask{
+	display: none;
+	top: 60px;
+	left: 170px;
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	background: #fff;
+	opacity: 0.5;
+}
+.details_box .details_img .upMask{
+	position: absolute;
+	width: 480px;
+	height: 480px;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	cursor: crosshair;
+}
+.details_box .details_img .largeDiv{
+	position: absolute;
+	left: 490px;
+	top: 0;
+	border: 1px solid #000;
+	width: 300px;
+	height: 300px;
+	display: none;
+	background: url(../images/xiangqing/big/7.jpg);
+}
+.details_box .details_img .details_text{
+	font-size: 12px;
+	color: #767676;
+	width: 400px;
+}
+.details_box .details_img .details_text p{
+	padding: 10px 0 0;
+	line-height: 18px;
+}
+/*价格*/
+.details_box .price_box{
+	float: left;
+	margin: 20px 0 0 25px;
+	width: 560px;
+	position: relative;
+}
+.details_box .price_box .title{
+	width: 490px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 14px;
+}
+.details_box .price_box .pric{
+	margin-top: 30px;
+	font-size: 24px;
+	color: #b0916a;
+}
+.details_box .price_box .size{
+	margin-top: 10px;
+	height: 35px;
+}
+.details_box .price_box .size li{
+	float: left;
+	width: 40px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #767676;
+	background: #f2f6f7;
+	border-radius: 2px;
+}
+.details_box .price_box .desc{
+	color: #b6b6b6;
+	line-height: 20px;
+	font-size: 12px;
+	margin: 15px 0 ;
+}
+/*加减按钮*/
+.details_box .price_box .num{
+	padding: 10px 0;
+	color: #767676;
+	font-size: 12px;
+}
+.details_box .price_box .num input{
+	margin-top: 2px;
+    width: 35px;
+    height: 20px;
+    border: none;
+    background: 0 0;
+    color: #b0916a;
+    text-align: center;
+}
+.details_box .price_box .num b{
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	background: #f2f6f7 url(../images/icon.png)no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.details_box .price_box .num .btn1{
+	background-position: -7px -282px;
+}
+.details_box .price_box .num .btn2{
+	background-position: -67px -253px;
+}
+/*换购*/
+/*.details_box .price_box .huan span{
+	display: inline-block;
+	width: 36px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	background: #a5002f;
+}
+.details_box .price_box .huan .check{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: url(../images/xiangqing/check_1123_2.png)no-repeat;
+	position: relative;
+	top: 4px;
+	left: 10px;
+}
+.details_box .price_box .huan .huan_price{
+	display: inline-block;
+	width: ;
+}*/
+
+/*按钮*/
+.details_box .price_box .btns{
+	width: 490px;
+	height: 34px;
+	margin: 10px 0 0 0;
+}
+.details_box .price_box .btns button{
+	width: 160px;
+	height: 30px;
+	color: #fff;
+	background: #b0916a;
+	cursor: pointer;
+	margin-right: 5px;
+	border-radius: 3px;
+	float: left;
+}
+.details_box .price_box .btns button:hover{
+	    background: #8b7860;
+}
+.details_box .price_box .hint{
+	padding: 10px 0 30px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 12px;
+}
+.details_box .price_box .hint dt{
+	float: left;
+	color: #767676;
+}
+.details_box .price_box .hint dd{
+	float: left;
+	color: #a5002f;
+}
+.details_box .price_box .select{
+	padding: 20px 0 0;
+	font-weight: bold;
+	overflow: hidden;
+}
+.details_box .price_box .select li{
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 60px 0 0;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #d9e8eb;
+}
+.details_box .price_box .select li span{
+	font-size: 1pc;
+}
+.details_box .price_box .select li.show{
+	border-bottom: 3px solid #7b9196;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

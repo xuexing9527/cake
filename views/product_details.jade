@@ -1,0 +1,68 @@
+extends layout
+append head
+	link(rel='stylesheet', href='/stylesheets/product_details.css')
+	script(src='js/lib/jquery.min.js')
+	script(src='js/product_details.js')
+block content
+	div.product_details
+		//图片展示
+		div.details_box
+			//左边图片列表
+			div.details_list
+				div.top_btn
+					i
+				div.small_list
+					ul
+						li
+							a(src="#")
+								img(src="images/xiangqing/sm/7.jpg")
+							a(src="#")
+								img(src="images/xiangqing/sm/8.jpg")
+							a(src="#")
+								img(src="images/xiangqing/sm/9.jpg")
+				div.bottom_btn
+					i
+			//图片
+			div.details_img
+				img(src="images/xiangqing/mm/7.jpg")
+				div.mask
+				div.upMask
+				div.largeDiv
+				div.details_text
+					p Depuis sa création en 1893 du restaurant Maxim, ce gâteau, comme son panonceau, n'a jamais changé.
+					p 自1893年马克西姆餐厅成立以来，没换过的除了招牌，还有这款蛋糕。
+			//价格
+			div.price_box
+				div.title
+					span Napoléon 1893 拿破仑1893
+				div.pric ￥
+					span 298.00
+				ul.size
+					li
+						span 1磅
+					li
+						span 2磅
+					li
+						span 5磅
+				div.desc
+					span 适合4~7人食用
+					span SIZE:17.5cm*7.0cm
+					p 需提前5小时预定
+				div.num#num
+					span 数量：
+					b.btn1
+					input(type="text" value="1")
+					b.btn2
+				div.btns
+					button 加入购物车
+					button 立即购买
+				div.hint
+					dt *温馨提示：
+					dd 过敏体质请谨慎购买
+				ul.select
+					li.show
+						span Best Ingredient
+						p 优质原材料
+					li
+						span Evaluation
+						p 累计点评(0)
