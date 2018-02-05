@@ -9,16 +9,16 @@ block content
                     span.register_bar 会员注册
                 div.formBox
                     div.input
-                        input(type="text" placeholder="手机号码" class="y")
+                        input(id='uname' type="text" placeholder="手机号码" class="y")
                         span
+                    //div.input
+                    //    input(type="text" placeholder="手机验证码" class="m")
+                    //    span.f 发送验证码 &gt;&gt;
                     div.input
-                        input(type="text" placeholder="手机验证码" class="m")
-                        span.f 发送验证码 &gt;&gt;
-                    div.input
-                        input(type="text" placeholder="新密码" class="pwd")
+                        input(id='pwd' type="password" placeholder="新密码" class="pwd")
                         span 密码必须是6-30位字符，可使用字母、数字
                     div.input
-                        input(type="text" placeholder="密码确认" class="pwdNew")
+                        input(id='rePwd' type="password" placeholder="密码确认" class="pwdNew")
                         span
                     div.ck
                         input(type='checkbox' id='ck')
@@ -26,8 +26,62 @@ block content
                             a(href='#') &nbsp;&nbsp;同意《购物协议》
                         i
                     div.btn
-                        span.btn1 提交
+                        span.btn1#submit 提交
             div.img
                 i
                 span 我已经注册,现在就<a href="/login"> 登录</a>
+                script.
+                    const portRegister = '/users/register'
+
+                    $('#submit').click(function () {
+                        alert('提交')
+                        const data = {
+                            uname: $('#uname').val(),
+                            pwd: $('#pwd').val(),
+                            rePwd: $('#rePwd').val()
+                        }
+
+                        if(!data.uname){
+                            alert('用户名不能为空或格式不正确!')
+                            return
+                        }
+                        if(!data.pwd){
+                            alert('密码不能为空或格式不正确!')
+                            return
+                        }
+                        if(!data.rePwd){
+                            alert('重复密码不能为空或格式不正确!')
+                            return
+                        }
+                        // show 加载页面 gif
+                        $.ajax({
+                            url: portRegister,
+                            type: 'POST',
+                            data: data,
+                            success: function (data) {
+                                console.log(data)
+                                switch (data.status){
+                                    case 0:
+                                        alert(data.msg)
+                                        break;
+                                    case 1:
+                                        alert(data.msg)
+                                        break
+                                    case 2:
+                                        alert(data.msg)
+                                        break
+                                    case 3:
+                                        alert(data.msg + '即将放回上个页面...')
+                                        location = location.search.match(/prePath=(.*?)_/)[1]
+                                        break
+                                    default:
+                                        console.log('data.status异常: ' + data.status)
+                                }
+                                // 去掉加载中gif。。。
+                            },
+                            error: function (err) {
+                                console.log(err)
+                            }
+                        })
+                    })
 

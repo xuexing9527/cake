@@ -35,23 +35,23 @@ router.get('/allCake2', function *(next) {
 //     });
 // });
 router.get('/login', function *(next) {
-    yield this.render('user／login', {
-        title: 'Hello login'
+    yield this.render('user/login', {
     });
 });
 router.get('/register', function *(next) {
     yield this.render('user/register', {
-        title: 'Hello login'
     });
 });
 router.get('/product_details', function *(next) {
     yield this.render('product_details', {
-        title: 'Hello login'
     });
 });
 router.get('/napoleon', function *(next) {
     yield this.render('napoleon', {
-        title: 'Hello napoleon'
+    });
+});
+router.get('/userCenter', function *(next) {
+    yield this.render('user/userCenter', {
     });
 });
 module.exports = router;

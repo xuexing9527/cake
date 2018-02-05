@@ -1,0 +1,8 @@
+extends ../layout
+append head
+    link(rel='stylesheet', href='/stylesheets/index.css')
+block content
+    h1 需要判断是否登录
+    h2 这是用户中心页面
+    script.
+        $('#headerNav>ul>li').eq(3).addClass('active')

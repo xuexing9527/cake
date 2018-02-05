@@ -4,12 +4,12 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/header.css')
+    script(src='js/lib/jquery.js')
+    script(src='js/lib/bootstrap.js')
     block head
     link(rel='stylesheet', href='/stylesheets/footer.css')
   body
     include includes/header
     block content
     include includes/footer
-    script(src='js/lib/jquery.js')
-    script(src='js/lib/bootstrap.js')
     block javascript
