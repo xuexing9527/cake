@@ -6,12 +6,6 @@ router.get('/', function *(next) {
   });
 });
 
-// router.get('/foo', function *(next) {
-//   yield this.render('index', {
-//     title: 'Hello World foo!'
-//   });
-// });
-
 router.get('/allCake', function *(next) {
     yield this.render('index', {
         title: 'Hello all cake!'
@@ -24,16 +18,6 @@ router.get('/allCake2', function *(next) {
     });
 });
 
-// router.get('/header', function *(next) {
-//     yield this.render('header', {
-//         title: 'Hello header!'
-//     });
-// });
-// router.get('/footer', function *(next) {
-//     yield this.render('footer', {
-//         title: 'Hello footer'
-//     });
-// });
 router.get('/login', function *(next) {
     yield this.render('user/login', {
     });

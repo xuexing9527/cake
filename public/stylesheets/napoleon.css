@@ -46,8 +46,8 @@
 .napoleon .second .back .rt{
     width:600px;
     height: 458px;
-    float: left;
-    border:1px solid red;
+    /*float: left;*/
+    /*border:1px solid red;*/
 }
 
 
@@ -76,7 +76,7 @@
     text-align: center;
 }
 .napoleon .first .container ul li:nth-child(2){
-    margin:0 146px;
+    margin:0 132px;
 }
 .napoleon .first .container ul .classical span{
     display: block;

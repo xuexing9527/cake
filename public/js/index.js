@@ -194,3 +194,99 @@ $(function(){
     }
     $('#napoleonCake').click(napoleonCake)
 })
+// $(()=>{
+//     const config = {
+//         n:5,//每列显示的蛋糕个数
+//         time:666,//渐变的事件
+//         width:220,
+//         height:283
+//
+//     }
+//     //页面刷新加载数据
+//     $.ajax({
+//         url:'users/cake',
+//         type:'GET',
+//         data:{},
+//         success:function(data){
+//             obj = data
+//             console.log(data.allCake)
+//             var allCake = data.allCake
+//             var html = ``
+//             for(var i=0;i<allCake.length;i++){
+//                 allCake[i].y = parseInt(i/config.n)//格式化数组
+//                 allCake[i].x = i%config.n
+//                 html += `
+//                 <li data-id="${allCake[i].id}" data-x="${allCake[i].x}" data-y="${allCake[i].y}">
+//                     <div class="t">
+//                         <a href="#">
+//                          <img src="${allCake[i].src}" >
+//                         </a>
+//                          <div class="f">
+//                             <a href="#">
+//                                 <div>
+//                                     <p>${allCake[i].price}</p>
+//                                     <p class="i">甜品指数：<i></i></p>
+//                                     </div>
+//                                     <div></div>
+//                              </a>
+//                          </div>
+//                    </div>
+//                    <div class="text">
+//                         <img src="${allCake[i].iconSrc}">
+//                         <a src="#"><span>${allCake[i].titleEn}</span>
+//                             <span>${allCake[i].titleCh}</span>
+//                         </a>
+//                    </div>
+//                 </li>
+//                 `
+//             }
+//
+//
+//             $('#cakeList').html(html)
+//         },
+//         error:function(err){
+//             console.log(err)
+//         }
+//     })
+//
+//     $('#asideNav li').on('click','a',function(){//为每个li绑定单击事件
+//         switch($(this).html()){
+//             case  '拿破仑' :
+//                 loadCake('napoleonCake')
+//             break;
+//             case  '鲜奶' :
+//                 loadCake('milkCake')
+//                 break;
+//             default :
+//                 break;
+//         }
+//     })
+//     function loadCake(cakeType){//ajax加载不同类型的蛋糕
+//         $.ajax({
+//             url:'users/cake',
+//             type:'GET',
+//             data:{},
+//             success:function(data){
+//                 var data = data[cakeType]
+//                 animateView(data)
+//             }
+//         })
+//     }
+//     function animateView(data){//动画打印选择的蛋糕分类
+//         for(var i=0;i<data.length;i++){
+//             data[i].y = parseInt(i/config.n)//格式化数组
+//             data[i].x = i%config.n
+//             $('#cakeList li').each(function(){
+//                 if($(this).data('id')==data[i].id){
+//                     var x = $(this).data('x')
+//                     var y = $(this).data('y')
+//                     var goX = (x-data[i].x)*config.width
+//                     var goY = (y-data[i].y)*config.height
+//                     $(this).css({'position':'relative'})
+//                 }
+//             })
+//         }
+//
+//     }
+//
+// })

@@ -14,4 +14,16 @@
 * `git push`   推送代码到远程代码仓库
 # 项目结构
 
-
+* `bin`  启动服务入口
+* `config` 分离出的配置文件包括启动的端口号和数据库的配置
+* `db／user.js` 分离出的注册阶段与数据库链接的公共方法，包括创建连接池，向表中插入数据，通过名字查表等，包装公共的query方法               
+* `node_modules` npm install 下载的package.json里的依赖包
+* `public` 静态文件包括images/js/css等
+* `routes/index.js` 前端路由配置
+* `routes/users.js` 后端路由配置
+* `views` jade模板文件
+* `gitignore` git不要提交的文件 
+* `app.js` 
+* `Gulpfile.js` gulp配置信息
+* `npm-debug.log` 日志文件
+* `package.json`  依赖包的配置信息以及版本信息等

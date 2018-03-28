@@ -59,12 +59,12 @@ router.post('/register', function *(next) {
                     console.log(error)
                 }
                 ctx.body={
-                    data: 1,
+                    status: 1,
                     msg: '用户已存在'
                 };
             }else if (user.pwd!==user.rePwd|| user.pass==''){
                 ctx.body={
-                    data: 2,
+                    status: 2,
                     msg: '两次密码输入不一致'
                 };
             }else if(!result.length && !(user.pwd!==user.rePwd|| user.pass=='')){
@@ -85,47 +85,6 @@ router.post('/register', function *(next) {
             }
         })
 });
-// router.post('/signup',async (ctx,next)=>{
-//     console.log(ctx)
-//     console.log(ctx.request.body)
-//     var user={
-//         name:ctx.request.body.name,
-//         pass:ctx.request.body.password,
-//         repeatpass:ctx.request.body.repeatpass
-//     }
-//     await userModel.findDataByName(user.name)
-//         .then(result=>{
-//             // var res=JSON.parse(JSON.stringify(reslut))
-//             console.log(result)
-//
-//             if (result.length){
-//                 try {
-//                     throw Error('用户存在')
-//                 }catch (error){
-//                     //处理err
-//                     console.log(error)
-//                 }
-//                 ctx.body={
-//                     data:1
-//                 };;
-//             }else if (user.pass!==user.repeatpass || user.pass==''){
-//                 ctx.body={
-//                     data:2
-//                 };
-//             }else{
-//                 ctx.body={
-//                     data:3
-//                 };
-//                 console.log('注册成功')
-//                 // ctx.session.user=ctx.request.body.name
-//                 userModel.insertData([ctx.request.body.name,md5(ctx.request.body.password)])
-//             }
-//         })
-//
-// })
-
-
-
 
 // cake
 router.get('/cake', function *(next) {
@@ -224,25 +183,43 @@ router.get('/cake', function *(next) {
         }
     ],
         "milkCake": [
-        {
-            "id": 6,
-            "src": "images/index/1.jpg",
-            "price": "2磅/318 RMB",
-            "score": "6",
-            "iconSrc": "images/index/rq.png",
-            "titleEn": "Napoléon aux fraises",
-            "titleCh": "拿破仑莓恋",
-        },
-        {
-            "id": 7,
-            "src": "images/index/list_2132_1.jpg",
-            "price": "2磅/318 RMB",
-            "score": "",
-            "iconSrc": "",
-            "titleEn": "Mont Blanc",
-            "titleCh": "朗姆醇栗",
-        }
-    ]
+            {
+                "id": 6,
+                "src": "images/index/1.jpg",
+                "price": "2磅/318 RMB",
+                "score": "6",
+                "iconSrc": "images/index/rq.png",
+                "titleEn": "Napoléon aux fraises",
+                "titleCh": "拿破仑莓恋",
+            },
+            {
+                "id": 7,
+                "src": "images/index/list_2132_1.jpg",
+                "price": "2磅/318 RMB",
+                "score": "",
+                "iconSrc": "",
+                "titleEn": "Mont Blanc",
+                "titleCh": "朗姆醇栗",
+            },
+            {
+                "id": 3,
+                "src": "images/index/list_1959_1.jpg",
+                "price": "2磅/298 RMB",
+                "score": "20",
+                "iconSrc": "",
+                "titleEn": "Fraise-Chantilly",
+                "titleCh": "鲜莓印雪",
+            },
+            {
+                "id": 4,
+                "src": "images/index/1(4).jpg",
+                "price": "2磅/298 RMB",
+                "score": "3",
+                "iconSrc": "images/index/rq.png",
+                "titleEn": "Velour rouge",
+                "titleCh": "蔓越莓红丝绒",
+            }
+        ]
 }
 })
 

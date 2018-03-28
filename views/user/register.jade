@@ -9,7 +9,7 @@ block content
                     span.register_bar 会员注册
                 div.formBox
                     div.input
-                        input(id='uname' type="text" placeholder="手机号码" class="y")
+                        input(id='uname' type="text" placeholder="用户名手机号码" class="y")
                         span
                     //div.input
                     //    input(type="text" placeholder="手机验证码" class="m")
@@ -71,8 +71,7 @@ block content
                                         alert(data.msg)
                                         break
                                     case 3:
-                                        alert(data.msg + '即将放回上个页面...')
-                                        location = location.search.match(/prePath=(.*?)_/)[1]
+                                        alert(data.msg)
                                         break
                                     default:
                                         console.log('data.status异常: ' + data.status)
